@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Suez+One&display=swap');
+
+// Set your brand colors
+$ming: #def5fe;
+$max-blue: #5EB1BF;
+$brown: #757763;
+$beige-light: #F8EEA5;
+$beige-lighter: #FAF5D1;
+$black: #333333;
+
+// Update Bulma's global variables
+$family-primary: 'Montserrat', sans-serif;
+$family-secondary: 'Suez One', serif;
+$primary: $ming;
+$link: $black;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $ming;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/bulma.sass";

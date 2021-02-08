@@ -1,0 +1,23 @@
+{
+  "name": "my-recipes",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss ./src/assets/css/mystyles.css",
+    "css-watch": "yarn run css-build",
+    "start": "yarn run css-watch"
+  },
+  "dependencies": {
+    "@gridsome/source-airtable": "^0.2.0",
+    "buefy": "^0.9.4",
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-flexsearch": "^1.0.5",
+    "vue-shortkey": "^3.1.7",
+    "vue-simple-markdown": "^1.1.4"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
