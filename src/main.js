@@ -4,7 +4,8 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import Buefy from 'buefy'
 import '~/assets/css/mystyles.css';
-import VueSimpleMarkdown from 'vue-simple-markdown'
+import VueSimpleMarkdown from 'vue-simple-markdown';
+import GlobalEvents from 'vue-global-events'
 
 
 export default function (Vue, { router, head, isClient }) {
@@ -12,7 +13,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   Vue.use(Buefy)
   Vue.use(VueSimpleMarkdown)
-  Vue.use(require('vue-shortkey'))
+  Vue.component('GlobalEvents', GlobalEvents)
 
   head.link.push({
     rel: 'stylesheet',

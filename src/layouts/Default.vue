@@ -5,8 +5,12 @@
         <g-link to="/" class="is-family-secondary is-1 is-warning">{{ $static.metadata.siteName }}</g-link>
       </strong>
     </header>
+    <header class="subheader">
+      <b-button type="is-secondary" rounded icon-pack="fas" icon-left="search" @click="openSearch"></b-button>
+    </header>
     <slot/>
-    <ClientOnly><button hidden="true" v-shortkey="['ctrl', 'f']" @shortkey="openSearch()"></button></ClientOnly>
+    <GlobalEvents
+      @keyup.prevent.ctrl.space="openSearch"/>
   <b-modal v-model="isCardModalActive" full-screen>
       <div class="card ">
         <div class="card-content">
@@ -111,4 +115,16 @@ body {
   text-decoration-line: underline;
   text-decoration-color: #333333;
 }
+
+.subheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 80px;
+  font-size: xxx-large;
+}
+
 </style>
