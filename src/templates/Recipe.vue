@@ -2,7 +2,7 @@
     <Layout>
         <div class="recipe-body">
         <section class="section pb-0">
-            <h1 class="title is-family-secondary">{{ $page.recipes.recipeName }}</h1>
+            <h1 class="title is-4 is-family-secondary">{{ $page.recipes.recipeName }}</h1>
             <div class="columns">
                 <div class="column is-half">
                     <h2 class="subtitle">Cooking Time: {{ secondsToHms($page.recipes.cookingTime)}}</h2>

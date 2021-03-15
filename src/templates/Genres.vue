@@ -3,7 +3,7 @@
         <section class="section">
             <div class="tile is-ancestor is-flex-wrap-wrap is-justify-content-center">
             <div v-for="recipe in $page.genres.recipes" :key="recipe.id"
-                class="tile is-parent is-4 is-flex-direction-column is-flex-shrink-1">
+                class="tile is-parent is-3 is-flex-direction-column is-flex-shrink-1">
             <recipe-card :recipe="recipe"/>
             </div>
             </div>

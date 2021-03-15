@@ -7,7 +7,7 @@
             </figure>
         </div>
         <div class="card-content">
-            <g-link :to="recipe.path"><p class="title is-family-secondary has-text-centered mb-2">
+            <g-link :to="recipe.path"><p class="title is-4 is-family-secondary has-text-centered mb-2">
                 {{ recipe.recipeName }}
             </p></g-link>
         
