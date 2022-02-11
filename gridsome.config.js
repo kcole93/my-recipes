@@ -10,8 +10,8 @@ module.exports = {
     {
       use: '@gridsome/source-airtable',
       options: {
-        apiKey: 'keynC78aEV5ucg4p5', // Read-only API Key
-        base: 'appJFjE5DMoQ1LPnc',
+        apiKey: process.env.AIRTABLE_API_KEY,
+        base: process.env.AIRTABLE_BASE_ID,
         tables: [
           {
             name: 'Recipes',
